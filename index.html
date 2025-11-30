@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="description" content="Главная страница">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Главная страница">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="assets/img/549e5e98-bba8-4d3e-a99d-1c75190816f0-15297754.jpeg">
+    <meta name="twitter:title" content="Главная страница">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="assets/img/549e5e98-bba8-4d3e-a99d-1c75190816f0-15297754.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="noindex">
+    <style id="inline-css">
+        blockquote,
+        body,
+        button,
+        code,
+        dd,
+        dl,
+        dt,
+        fieldset,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        html,
+        input,
+        legend,
+        li,
+        ol,
+        p,
+        pre,
+        td,
+        textarea,
+        th,
+        ul {
+            padding: 0;
+            margin: 0;
+            font-weight: 400
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            border: none;
+            font-family: inherit;
+            color: inherit;
+            background: 0 0;
+            -webkit-appearance: none;
+            appearance: none;
+            outline: 0
+        }
+
+        body,
+        html {
+            position: relative;
+            width: 100%;
+            min-width: 300px;
+            height: 100%;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: none;
+            -webkit-overflow-scrolling: touch;
+            word-wrap: break-word;
+            word-break: break-word
+        }
+
+        html {
+            -webkit-perspective: none !important
+        }
+
+        b,
+        strong {
+            font-weight: 700 !important
+        }
+
+        a {
+            color: inherit
+        }
+
+        .sb-body_overflow {
+            height: 100%;
+            overflow: hidden
+        }
+
+        .sb-body_overflow:after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 98;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(51, 51, 51, .8)
+        }
+
+        .sb-body_with-footer .site-wrapper {
+            box-sizing: border-box
+        }
+
+        .sb-body_hide-messenger {
+            overflow: hidden
+        }
+
+        .sb-body_hide-messenger .messenger-button {
+            display: none
+        }
+
+        .sb-padding-top_l {
+            padding-top: 72px
+        }
+
+        .sb-padding-top_m {
+            padding-top: 36px
+        }
+
+        .sb-padding-top_s {
+            padding-top: 20px
+        }
+
+        .sb-padding-bottom_l {
+            padding-bottom: 72px
+        }
+
+        .sb-padding-bottom_m {
+            padding-bottom: 36px
+        }
+
+        .sb-padding-bottom_s {
+            padding-bottom: 20px
+        }
+
+        .sb-hidden {
+            display: none !important
+        }
+
+        @media screen and (max-width:639px) {
+            .sb-hidden-mobile {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:300px) {
+            .sb-hidden-mobile-min {
+                display: none !important
+            }
+        }
+
+        @media (min-width:480px) and (max-width:639px) {
+            .sb-hidden-mobile-interval {
+                display: none !important
+            }
+        }
+
+        @media screen and (max-width:959px) {
+
+            .sb-body_with-footer .sb-block_fullscreen:only-child,
+            .sb-body_with-footer .site-wrapper {
+                min-height: calc(100vh - 44px)
+            }
+
+            .sb-hidden-tablet {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:640px) {
+            .sb-hidden-tablet-min {
+                display: none !important
+            }
+        }
+
+        @media (min-width:640px) and (max-width:959px) {
+            .sb-hidden-tablet-interval {
+                display: none !important
+            }
+        }
+
+        @media screen and (max-width:1359px) {
+            .sb-hidden-desktop {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:960px) {
+
+            .sb-body_with-footer .sb-block_fullscreen:only-child,
+            .sb-body_with-footer .site-wrapper {
+                min-height: calc(100vh - 60px)
+            }
+
+            .sb-hidden-desktop-min {
+                display: none !important
+            }
+        }
+
+        @media (min-width:960px) and (max-width:1359px) {
+            .sb-hidden-desktop-interval {
+                display: none !important
+            }
+        }
+
+        @media screen and (min-width:1360px) {
+            .sb-hidden-desktop-lg-min {
+                display: none !important
+            }
+        }
+
+        .sb-opacity {
+            opacity: .4
+        }
+
+        .sb-align-center {
+            text-align: center
+        }
+
+        .sb-align-left {
+            text-align: left
+        }
+
+        .sb-pre-wrap {
+            white-space: pre-wrap
+        }
+
+        .sb-text-ellipsis-focus:focus {
+            text-overflow: clip !important
+        }
+    </style>
+    <link rel="preconnect" href="https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net">
+    <link rel="stylesheet" href="assets/styles/styles-element.css">
+    <link rel="stylesheet" href="assets/styles/styles-layout.css">
+    <link rel="preload" href="assets/styles/styles-lazy.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/styles-lazy.css" media="print" onload="this.media='all'"><noscript>
+        <link rel="stylesheet" href="assets/styles/styles-lazy.css">
+    </noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu&subset=all&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&subset=all&display=swap">
+    <link rel="stylesheet" href="assets/styles/size-m.css">
+    <link rel="stylesheet" href="assets/styles/main-type-13.css">
+    <link rel="stylesheet" href="assets/styles/text-type-2.css">
+    <link rel="stylesheet" href="assets/styles/text-list-type-1.css">
+    <link rel="stylesheet" href="assets/styles/history-type-1.css">
+    <link rel="preload" href="assets/styles/advantages-blocks-type-2.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/advantages-blocks-type-2.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/text-type-4.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/text-type-4.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/call-to-action-type-1.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/call-to-action-type-1.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/bevel-type-1.css" as="style"
+        onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/bevel-type-1.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/footer.css" as="style" onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/footer.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/script.css" as="style" onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/script.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="assets/styles/popups.css" as="style" onerror="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="assets/styles/popups.css" media="print" onload="this.media='all'"><noscript>
+        <link rel="stylesheet" href="assets/styles/advantages-blocks-type-2.css">
+        <link rel="stylesheet" href="assets/styles/text-type-4.css">
+        <link rel="stylesheet" href="assets/styles/call-to-action-type-1.css">
+        <link rel="stylesheet" href="assets/styles/bevel-type-1.css">
+        <link rel="stylesheet" href="assets/styles/footer.css">
+        <link rel="stylesheet" href="assets/styles/script.css">
+        <link rel="stylesheet" href="assets/styles/popups.css">
+    </noscript>
+    <link rel="stylesheet" href="assets/styles/styles-helpers.css">
+</head>
+
+<body class="sb-body sb-body_with-footer ubuntu__title open-sans-regular sb-content-size_m sb-buttons-border_round">
+    <div class="site-wrapper" tabindex="0">
+        <section data-type="history" id="history"
+            class="s-history-type-1 sb-text-dark sb-padding-top_l sb-padding-bottom_l">
+            <div class="sb-background" style="background: #ffffff;"></div>
+            <div class="sb-container sb-m-clear-bottom">
+                <div
+                    class="sb-row s-history-type-1__item sb-m-3-bottom sb-m-clear-bottom sb-m-clear-top s-history-type-1__item_sort">
+                    <div class="sb-col_sm-12 sb-col_xs-12 sb-hidden-desktop-min">
+                        <h2 class="s-history-type-1__title sb-font-h2 sb-font-title">
+                            Telegram-бот
+                            “Нейрофотошоп” на модели Nano Banana.
+                        </h2>
+                    </div>
+                    <div
+                        class="sb-col_lg-5 sb-col_md-6 sb-col_sm-12 sb-col_xs-12 sb-m-7-bottom sb-m-3-top s-history-type-1__image-wrapper">
+                        <div class="sb-image-ratio-3x4"><img class="sb-image-crop sb-image-crop_loaded lazy"
+                                src="assets/img/0b475493-f82a-42f5-ae3d-5e80d235e846-15298081.png" alt="Изображение">
+                        </div>
+                    </div>
+                    <div class="sb-col_sm-12 sb-col_xs-12 sb-col_lg-7 sb-col_md-6">
+                        <div class="s-history-type-1__text sb-m-clear-bottom">
+                            <h2
+                                class="s-history-type-1__title sb-hidden-tablet sb-font-h2 sb-font-title sb-m-12-bottom">
+                                Telegram-бот “Нейрофотошоп” на модели Nano Banana.
+                            </h2>
+                            <div class="sb-m-clear-bottom">
+                                <h5 class="sb-align-left sb-font-h5 sb-font-title sb-m-21-bottom">Он автоматически и
+                                    максимально реалистично превращает ваше фото в то, что вам нужно:</h5>
+                                <div class="sb-text-opacity sb-align-left sb-font-p1">
+                                    <font style="color: #000000;">✨ Убирает фон<br style="user-select: auto;">👕 Меняет
+                                        одежду<br style="user-select: auto;">🧍 Меняет позу<br
+                                            style="user-select: auto;">👫 Добавляет людей<br
+                                            style="user-select: auto;">🌍 Меняет локацию<br
+                                            style="user-select: auto;"><br style="user-select: auto;">Всё в одном месте.
+                                        В вашем Telegram.<br style="user-select: auto;">Без программ. Без сложностей.
+                                        Без ожидания.</font><br style="user-select: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-type="call-to-action" id="call-to-action"
+            class="s-call-to-action-type-1 sb-text-dark sb-align-center sb-padding-bottom_l">
+            <div class="sb-background" style="background: #ffffff;"></div>
+            <div class="sb-container sb-m-clear-bottom">
+                <div class="s-call-to-action-type-1__buttons sb-m-clear-bottom"><a id="cta_button"
+                        href="tg://resolve?domain=NanoBananaAiPhotoshopBot&start="
+                        class="sb-button-primary sb-button-primary_white s-call-to-action-type-1__button sb-m-20-bottom sb-button-scheme-white"
+                        style="background-color: #2780C9">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi bi-telegram" viewBox="0 0 16 16"
+                            style="margin-top: 8px;margin-right:5px;float: left;">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                        </svg>
+                        <span>Открыть в Telegram</span>
+                    </a></div>
+            </div>
+        </section>
+        <section data-type="bevel" id="bevel" class="s-bevel-type-1 s-bevel-type-1_direction-left">
+            <div class="sb-background sb-background_top-background" style="background: #ffffff;"></div>
+            <div class="sb-background sb-background_bottom-background" style="background: #333333;"></div>
+        </section>
+    </div><template id="popups-stash"></template><template id="popups-images-stash"></template>
+    <script>
+        window.tbConfig = { "inFrame": false, "enableLazyLoading": false, "enableJsLazyLoading": true, "enableDynamicGoods": true, "isPreviewMode": false, "posScriptUrl": "https://forma.tinkoff.ru/static/onlineScript.js", "enableMessengerLazyLoading": true, "usePublicSitesOrdersApi": true, "hasPromocodes": false, "styleChunksSplitting": true, "yandexMapsApiKey": "a9eba83c-b342-4dfe-ab11-2c7cbd6839cb", "cartHash": "U2FsdGVkX19hJgLl5Gcvslq0chiVhoVneWfGct5NvRsfEOcnzX8SM6izIQQcLHoCFyGJmyg91UMS/jTNqG7nE2S3K6xIhk9x93ZJGJ1GFLqiRM9LKiLhcrE7ZhMmiXCl3kE0DgPLo8dcJsTGrFaIxg==", "yaMetricsCounter": "105570035", "staticPath": "https://660c827d-ce04-4b4c-80d1-1d6200e5d4c5.selcdn.net/tb/0.1.917", "enableUserAnimations": false };
+        window.tbConfig.isExported = true; window.tbConfig.exportedApiUrl = 'https://a.tb.ru';
+        window.tbConfig.apiUrl = !window.tbConfig.isExported ? '' : window.tbConfig.exportedApiUrl;
+        window.tbConfig.isModern = 'noModule' in HTMLScriptElement.prototype;
+        (function () { var n, o = "chrome" in window, e = "InstallTrigger" in window; function t(n) { var o = document.createElement("script"); return o.src = "".concat(window.tbConfig.staticPath, "/js/").concat(n), window.tbConfig.isModern && (o.type = "module", o.src = o.src.replace(".js", ".modern.js")), o.defer = !0, o } function d(n) { var o = t(n); document.head.appendChild(o) } window.tbConfig.enableLazyLoading && d("lazy-load.js"), "attachShadow" in Element.prototype || d("lit-polyfill-support.js"), d("webcomponents-loader.js"), o || e || d("smoothscroll.js"), n = t("front.js"), document.addEventListener("DOMContentLoaded", (function () { document.head.appendChild(n) })); })()
+    </script>
+    <section id="yandex-metrica-script" data-type="script">
+        <div class="sb-container sb-container_no-position">
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+                    (function (m, e, t, r, i, k, a) {
+                        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+                        m[i].l = 1 * new Date();
+                        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+                        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+                    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105571354', 'ym');
+
+                ym(105571354, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
+            </script>
+            <noscript>
+                <div><img src="https://mc.yandex.ru/watch/105571354" style="position:absolute; left:-9999px;" alt="" />
+                </div>
+            </noscript>
+            <!-- /Yandex.Metrika counter -->
+        </div>
+    </section>
+
+    <script>
+        ym(105571354, 'getClientID', function (clientID) {
+            var button = document.getElementById("cta_button");
+            var params = new URLSearchParams(window.location.search);
+            params.set("ym_client_id", clientID);
+            button.href = "https://bananabot.hackcrafted.com/redirect?" + params.toString();
+
+            button.onclick = function () {
+                ym(105571354, 'reachGoal', 'cta_click');
+            };
+        });
+    </script>
+</body>
+
+</html>
