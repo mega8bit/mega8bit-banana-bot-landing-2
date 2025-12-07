@@ -284,6 +284,25 @@
         <link rel="stylesheet" href="assets/styles/popups.css">
     </noscript>
     <link rel="stylesheet" href="assets/styles/styles-helpers.css">
+    <script>
+        function generateUUID() { // Public Domain/MIT
+            var d = new Date().getTime();//Timestamp
+            var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now() * 1000)) || 0;
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+                var r = Math.random() * 16;//random number between 0 and 16
+                if (d > 0) {//Use timestamp until depleted
+                    r = (d + r) % 16 | 0;
+                    d = Math.floor(d / 16);
+                } else {//Use microseconds since page-load if supported
+                    r = (d2 + r) % 16 | 0;
+                    d2 = Math.floor(d2 / 16);
+                }
+                return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+            });
+        }
+
+        var globalUUID = generateUUID();
+    </script>
 </head>
 
 <body class="sb-body sb-body_with-footer ubuntu__title open-sans-regular sb-content-size_m sb-buttons-border_round">
@@ -378,15 +397,36 @@
                 </div>
             </noscript>
             <!-- /Yandex.Metrika counter -->
+
+            <!-- Top.Mail.Ru counter -->
+            <script type="text/javascript">
+                var _tmr = window._tmr || (window._tmr = []);
+                _tmr.push({ id: "3725011", type: "pageView", start: (new Date()).getTime(), pid: globalUUID });
+                (function (d, w, id) {
+                    if (d.getElementById(id)) return;
+                    var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+                    ts.src = "https://top-fwz1.mail.ru/js/code.js";
+                    var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+                    if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+                })(document, window, "tmr-code");
+            </script>
+            <noscript>
+                <div><img src="https://top-fwz1.mail.ru/counter?id=3725011;js=na"
+                        style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div>
+            </noscript>
+            <!-- /Top.Mail.Ru counter -->
+
         </div>
     </section>
 
     <script>
+
         ym(105575090, 'getClientID', function (clientID) {
             var button = document.getElementById("cta_button");
             var params = new URLSearchParams(window.location.search);
             params.set("ym_client_id", clientID);
             params.set("ym_counter", 105575090);
+            params.set("global_uuid", globalUUID);
             button.href = "https://bananabot.hackcrafted.com/redirect?" + params.toString();
 
             button.onclick = function () {
